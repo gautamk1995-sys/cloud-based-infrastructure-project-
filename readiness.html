@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud Infrastructure Project</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Cloud Infrastructure in Business Operations</h1>
+<p>MCA Final Year Project</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="readiness.html">Readiness</a>
+<a href="calculator.html">Calculator</a>
+<a href="onepager.html">One Pager</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>Project Overview</h2>
+<p>
+This project explains how cloud-based infrastructure improves scalability,
+security, collaboration, and operational efficiency in modern organizations.
+</p>
+</div>
+
+<div class="card">
+<h2>Objectives</h2>
+<ul>
+<li>Understand cloud computing concepts</li>
+<li>Study cloud implementation in organizations</li>
+<li>Analyze operational efficiency improvements</li>
+<li>Evaluate cybersecurity practices</li>
+<li>Study role of IT engineers</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Cloud Adoption Chart</h2>
+<canvas id="cloudChart"></canvas>
+</div>
+
+</div>
+
+<div class="footer">
+<p>Developed by Gautam Kumar Chauhan</p>
+</div>
+
+<script>
+const ctx = document.getElementById('cloudChart');
+
+new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ['AWS', 'Azure', 'Google Cloud'],
+datasets: [{
+label: 'Cloud Usage',
+data: [80, 70, 60]
+}]
+}
+});
+</script>
+
+</body>
+</html>

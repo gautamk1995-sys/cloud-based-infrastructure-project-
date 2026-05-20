@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud Readiness Assessment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Cloud Readiness Assessment</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="readiness.html">Readiness</a>
+<a href="calculator.html">Calculator</a>
+<a href="onepager.html">One Pager</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>Assessment Questions</h2>
+
+<form>
+<p><input type="checkbox"> Does your organization use remote work?</p>
+<p><input type="checkbox"> Is cloud storage implemented?</p>
+<p><input type="checkbox"> Is backup management available?</p>
+<p><input type="checkbox"> Are cybersecurity tools implemented?</p>
+<p><input type="checkbox"> Does your company use virtualization?</p>
+
+<button type="button" onclick="showResult()">Check Readiness</button>
+</form>
+
+<div class="result" id="result"></div>
+
+</div>
+
+</div>
+
+<script>
+function showResult(){
+document.getElementById('result').innerHTML =
+'Your organization is cloud-ready for migration.';
+}
+</script>
+
+</body>
+</html>

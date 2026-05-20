@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud Cost Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Cloud Cost Calculator</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="readiness.html">Readiness</a>
+<a href="calculator.html">Calculator</a>
+<a href="onepager.html">One Pager</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>Estimate Cloud Infrastructure Cost</h2>
+
+<input type="number" id="users" placeholder="Enter Number of Employees">
+
+<button onclick="calculate()">Calculate Cost</button>
+
+<div class="result" id="output"></div>
+
+</div>
+
+</div>
+
+<script>
+function calculate(){
+let users = document.getElementById('users').value;
+
+if(users === ''){
+alert('Please enter employee count');
+return;
+}
+
+let total = users * 1500;
+
+document.getElementById('output').innerHTML =
+'Estimated Monthly Cloud Cost: ₹' + total;
+}
+</script>
+
+</body>
+</html>
